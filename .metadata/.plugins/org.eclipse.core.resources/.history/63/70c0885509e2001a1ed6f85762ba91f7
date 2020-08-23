@@ -1,0 +1,34 @@
+package com.tieto.abstractClass;
+
+public class Indigo extends GenericAirCraft{
+
+	public static void main(String[] args) {
+		
+		GenericAirCraft g = new GenericAirCraft() {
+			
+			@Override
+			public void flightcolor() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		Indigo i = new Indigo();
+    	g.engineSpecification();
+	//	g.flightcolor();
+		i.engineSpecification();
+
+	}
+
+	@Override
+	public void flightcolor() {
+
+		System.out.println("Flight color is red..");
+	}
+	
+	public void engineSpecification()
+	{
+		System.out.println("Engine specification of indigo");
+	}
+	
+
+}

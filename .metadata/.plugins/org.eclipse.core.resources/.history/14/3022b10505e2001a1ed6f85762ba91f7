@@ -1,0 +1,10 @@
+package com.tieto.inheritance;
+
+public class Hond {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

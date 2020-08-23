@@ -1,0 +1,16 @@
+package com.tieto.interfacep;
+
+public class BankTest extends ICICI implements Bank{
+
+	public static void main(String[] args) {
+		
+		BankTest b = new BankTest();
+		b.payment();
+		
+		
+	
+		
+
+	}
+
+}

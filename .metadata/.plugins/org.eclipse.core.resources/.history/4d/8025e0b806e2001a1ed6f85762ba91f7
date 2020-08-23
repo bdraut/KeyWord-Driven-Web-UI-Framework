@@ -1,0 +1,16 @@
+package com.tieto.inheritance;
+
+public class Vehicle {
+
+	public String color = "red";
+	public void engine() {
+		
+		System.out.println("Generic Engine specification...");
+	}
+	
+	public void breaks()
+	{
+		System.out.println("Generic break implementation");
+	}
+	
+}

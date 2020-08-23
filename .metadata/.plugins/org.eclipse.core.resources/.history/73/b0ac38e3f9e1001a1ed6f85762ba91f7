@@ -1,0 +1,12 @@
+package com.tieto.abstractClass;
+
+public abstract class GenericAirCraft {
+	
+	public void engineSpecification()
+	{
+		System.out.println("Engine spcofied...");
+	}
+	public abstract void flightcolor();
+
+
+}

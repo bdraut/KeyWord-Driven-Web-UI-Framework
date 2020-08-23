@@ -1,0 +1,14 @@
+package com.tieto.functionOverloading;
+
+public class SetGetDemo {
+
+	public void data() {
+		 System.out.println("I am in Data");
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

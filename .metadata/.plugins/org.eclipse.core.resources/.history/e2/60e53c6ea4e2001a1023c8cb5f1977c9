@@ -1,0 +1,12 @@
+package com.tieto.array;
+
+public class PrintSmallestNumber {
+
+	public static void main(String[] args) {
+		int arr[][] = {{4,5},{3,8},{7,9}};
+		
+		
+
+	}
+
+}

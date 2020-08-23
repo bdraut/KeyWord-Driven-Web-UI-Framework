@@ -1,0 +1,17 @@
+package com.tieto.array;
+
+//Write a program to find the minimum number in the column having maximum number in 3*3  array
+/* 2 3 5
+ * 5 10 9
+ * 8 6 1
+ * Ans should be 6
+ */
+
+public class InterQuestion1 {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

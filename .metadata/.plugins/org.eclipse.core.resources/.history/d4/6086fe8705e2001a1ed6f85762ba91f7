@@ -1,0 +1,19 @@
+package com.tieto.inheritance;
+
+public class Hond extends Vehicle {
+
+	public static void main(String[] args) {
+	 
+
+	}
+	
+	public void color(String color)
+	{
+		System.out.println(color);
+	}
+	
+	public void wheels() {
+		System.out.println("Alloy wheels");
+	}
+}
+

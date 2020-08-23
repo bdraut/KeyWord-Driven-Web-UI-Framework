@@ -1,0 +1,23 @@
+package com.tieto.interfacep;
+
+/**
+ * @author rauttbhu
+ *
+ */
+public class BankTest {
+	
+	public void payment1()
+	{
+		System.out.println("Payment in ICICI");
+	}
+
+	public static void main(String[] args) {
+
+	//	Bank b = new BankTest();
+		Bank b = new ICICI();
+		b.withdraw();
+		b.payment();
+
+	}
+
+}

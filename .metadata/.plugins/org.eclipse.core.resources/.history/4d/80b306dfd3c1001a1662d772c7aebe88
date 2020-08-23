@@ -1,0 +1,15 @@
+package com.tieto.interfacep;
+
+public class ICICI implements Bank{
+	
+	  public void withdraw(){
+			 System.out.println("Payment withdran");
+		}
+
+	
+	public void payment() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.tieto.thiskeyword;
+
+public class ThisDemo {
+	
+	void a()
+	{
+		System.out.println("I am in A");
+	}
+	
+	void b() {
+		System.out.println("I am in B");
+		this.a();
+	}
+
+	public static void main(String[] args) {
+		
+		ThisDemo d = new ThisDemo();
+		d.b();
+	}
+
+}

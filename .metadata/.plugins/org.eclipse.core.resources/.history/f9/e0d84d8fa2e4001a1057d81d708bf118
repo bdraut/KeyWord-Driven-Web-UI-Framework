@@ -1,0 +1,51 @@
+package com.qa.hs.keyword.engine;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.WebDriver;
+
+public class KewWordEngine {
+	
+	public WebDriver driver;
+	public Properties prop;
+	
+	public static Workbook  book;
+	public static org.apache.poi.ss.usermodel.Sheet sheet;
+
+	public final String SCENARIO_SHEET_PATH = "/Users/rauttbhu/Desktop/JavaSelenium/KeywordDrivenHubSpot/src/main/java/com/qa/hs/keyword/scenarios/hubspot_scenarios.xlsx";
+	
+	public void startExecution(String sheetName)
+	{
+		FileInputStream file = null;
+		
+		try {
+			file = new FileInputStream(SCENARIO_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+		book =	WorkbookFactory.create(file);
+		} catch (EncryptedDocumentException e) {
+		
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		sheet =  book.getSheet(sheetName);
+		int k=0;
+		for(int i=0 ; i<sheet.getLastRowNum();i++)
+		{
+			sheet.getRow(i+1).getCell(k+1).toString().trim();
+		}
+	}
+}

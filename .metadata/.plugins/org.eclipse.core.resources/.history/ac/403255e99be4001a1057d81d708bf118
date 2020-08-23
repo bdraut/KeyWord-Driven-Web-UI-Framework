@@ -1,0 +1,12 @@
+package com.qa.hs.keyword.engine;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class KewWordEngine {
+	
+	public WebDriver driver;
+	public Properties prop;
+
+}

@@ -1,0 +1,29 @@
+package com.tieto.array;
+
+//Program to print smallest number from single dim array.
+
+public class SmallestNumberPrint {
+	
+
+
+	public static void main(String[] args) {
+		int small=0;
+		int arr [] = {2,3,9,4,6,7,8};
+		
+		for(int i=0; i<arr.length;i++)
+		{
+			
+				if (arr[i]<arr[i+1])
+						{
+						small = arr[i];
+						}
+				System.out.println("Current smallest number is :"+small);
+			}
+			
+		
+		
+		// System.out.println(small);
+
+	}
+
+}

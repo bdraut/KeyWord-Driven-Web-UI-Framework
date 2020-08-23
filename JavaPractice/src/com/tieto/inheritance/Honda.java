@@ -1,0 +1,24 @@
+package com.tieto.inheritance;
+
+public class Honda extends Vehicle {
+
+	public void color()
+	{
+		System.out.println(color);   //data member of parent class can be accessed in child class
+	}
+	
+	public void wheels() {
+		System.out.println("Alloy wheels");
+	}
+	
+	
+	public static void main(String[] args) {
+		 
+			
+		Honda h = new Honda();
+		h.breaks();
+		h.wheels();
+		h.color();
+	}
+}
+

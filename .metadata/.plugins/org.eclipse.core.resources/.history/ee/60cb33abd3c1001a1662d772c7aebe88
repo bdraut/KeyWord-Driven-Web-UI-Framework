@@ -1,0 +1,9 @@
+package com.tieto.interfacep;
+
+public class ICICI implements Bank{
+	
+	 static void withdraw(){
+			 System.out.println("Payment withdran");
+		}
+
+}

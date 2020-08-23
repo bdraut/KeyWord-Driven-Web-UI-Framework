@@ -1,0 +1,13 @@
+package com.tieto.interfacep;
+
+public interface Bank {
+
+	 static void withdraw(){
+		
+	}
+	 
+	 static void payment()
+	 {
+		 
+	 }
+}

@@ -1,0 +1,16 @@
+package com.tieto.strings;
+
+public class ReverseStrindDemo {
+
+	public static void main(String[] args) {
+		String s = "Bhushan";
+		String reverse = "";
+		
+		for(int i=s.length();i>0;i--)  // loop to print the string in reverse order
+		{
+			System.out.print(s.charAt(i-1));
+		}
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.tieto.interfacep;
+
+public class IndianTraffic implements WorldTraffic,ContinentTraffic {
+
+	public static void main(String[] args) {
+		
+		WorldTraffic w = new IndianTraffic();
+		ContinentTraffic t = new IndianTraffic();
+		w.grenGo();
+		w.yelloFlash();
+		t.followZebra();
+		WorldTraffic.redStop(); //static method 
+	}
+
+	@Override
+	public void grenGo() {
+
+		System.out.println("Indians will go");
+		
+	}
+
+	@Override
+	public void yelloFlash() {
+	
+		System.out.println("Indians will see yellow");
+	}
+
+	@Override
+	public void followZebra() {
+		System.out.println("Indians will follow zebra...its contient rule");
+		
+	}
+
+}

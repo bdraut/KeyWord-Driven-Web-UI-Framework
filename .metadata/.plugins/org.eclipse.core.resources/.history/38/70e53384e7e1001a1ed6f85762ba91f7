@@ -1,0 +1,5 @@
+package com.tieto.interfacep;
+
+public interface ContinentTraffic {
+
+}
